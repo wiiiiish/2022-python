@@ -12,6 +12,20 @@ class LinkedList:
         self.head = None  # 링크드 리스트의 가장 앞 노드
         self.tail = None  # 링크드 리스트의 가장 뒤 노드
 
+    def delete_after(self, previous_node):
+        """링크드 리스트 삭제 연산. 주어진 노드 뒤 노드를 삭제한다."""
+        data = previous_node.next.data
+
+        # tail 노드를 지우는 경우
+        if previous_node.next is self.tail:
+            previous_node.next = None
+            self.tail = previous_node
+        # 두 노드 사이의 노드를 지우는 경우
+        else:
+            previous_node.next = previous_node.next.next
+
+        return data
+
     def prepend(self, data):
         """링크드 리스트의 가장 앞에 데이터 삽입"""
         new_node = Node(data)
@@ -89,14 +103,20 @@ class LinkedList:
 my_list = LinkedList()
 
 # 링크드 리스트에 데이터 추가
-my_list.prepend(11)
-my_list.prepend(7)
-my_list.prepend(5)
-my_list.prepend(3)
-my_list.prepend(2)
+my_list.append(2)
+my_list.append(3)
+my_list.append(5)
+my_list.append(7)
+my_list.append(11)
 
 print(my_list)
 
-# head, tail 노드가 제대로 설정됐는지 확인
-print(my_list.head.data)
-print(my_list.tail.data)
+node_2 = my_list.find_node_at(2) # 인덱스 2에 있는 노드에 접근
+my_list.delete_after(node_2) # 인덱스 2 뒤에 있는 노드 삭제
+
+print(my_list)
+
+second_to_last_node = my_list.find_node_at(2) # 뒤에서 두 번째 인덱스에 있는 노드에 접근
+print(my_list.delete_after(second_to_last_node)) # 삭제된 노드의 데이터 출력
+
+print(my_list)
