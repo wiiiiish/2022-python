@@ -12,15 +12,26 @@ class LinkedList:
         self.head = None  # 링크드 리스트의 가장 앞 노드
         self.tail = None  # 링크드 리스트의 가장 뒤 노드
 
+    def insert_after(self, previous_node, data):
+        """링크드 리스트 주어진 노드 뒤 삽입 연산 메소드"""
+        new_node = Node(data)
+
+        # tail 노드 다음에 new_node를 추가할 때
+        if previous_node is self.tail:
+            self.tail.next = new_node
+            self.tail = new_node
+        # 두 노드 사이에 new_node를 추가할 때
+        else :
+            new_node.next = previous_node.next
+            previous_node.next = new_node
+
     def find_node_at(self, index):
         """링크드 리스트 접근 연산 메소드. 파라미터 인덱스는 항상 있다고 가정"""
         iterator = self.head
 
-        while (not iterator is None):
-            if iterator.data == data:
-                return iterator
-            else:
-                iterator = iterator.next
+        for _ in range(index):
+            iterator = iterator.next
+        return iterator
 
     def append(self, data):
         """링크드 리스트 추가 연산 메소드"""
@@ -53,12 +64,12 @@ class LinkedList:
     def find_node_with_data(self, data):
         """링크드 리스트에서 탐색 연산 메소드. 단, 해당 노드가 없으면 None을 리턴한다"""
         iterator = self.head
-
-        for _ in range(5):
+        while iterator is not None:
             if iterator.data == data:
                 return iterator
-            else :
+            else:
                 iterator = iterator.next
+        return None
 
 # 새로운 링크드 리스트 생성
 my_list = LinkedList()
