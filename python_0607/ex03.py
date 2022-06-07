@@ -88,3 +88,8 @@ node_2 = my_list.find_node_at(2) # 인덱스 2에 있는 노드에 접근
 my_list.insert_after(node_2, 13)
 
 print(my_list)
+
+head_node = my_list.head # 헤드 노드에 접근
+my_list.insert_after(head_node, 30) # 헤드 노드 바로 뒤에 30 삽입
+
+print(my_list)
