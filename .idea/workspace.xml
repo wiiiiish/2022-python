@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2592d72-cedc-4091-ac1e-3c012618ab4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/python_0607/ex05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPA/rpa_basic/1_excel/1_create_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RPA/rpa_basic/1_excel/2_sheet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +41,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.ex05">
-    <configuration name="ex01 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.2_sheet">
+    <configuration name="1_create_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="2022-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -49,11 +50,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_0607" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RPA/rpa_basic/1_excel" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_0607/ex01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RPA/rpa_basic/1_excel/1_create_file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -62,7 +63,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex02 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="2_sheet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="2022-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -70,11 +71,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_0607" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RPA/rpa_basic/1_excel" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_0607/ex02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RPA/rpa_basic/1_excel/2_sheet.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.2_sheet" />
+        <item itemvalue="Python.1_create_file" />
         <item itemvalue="Python.ex05" />
         <item itemvalue="Python.ex04" />
         <item itemvalue="Python.ex03 (1)" />
-        <item itemvalue="Python.ex02 (1)" />
-        <item itemvalue="Python.ex01 (2)" />
       </list>
     </recent_temporary>
   </component>
